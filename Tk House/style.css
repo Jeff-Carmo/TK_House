@@ -1,0 +1,351 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+  /* Index */
+ /* Cabeçalho */
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 22px;
+    font-size: 60px;
+    width: 327px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(244, 244, 244);
+   
+}
+#subtitulo2{
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 0 5px #fff;
+}
+
+
+#subtitulo3{
+    text-align: center;
+}
+
+
+header{
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%); 
+    margin: 0 auto;
+    height: 200px;
+    border-top: 8px solid black;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+}
+
+header img{
+    float: right;
+    width: 25px;
+    height: 25px;  
+    padding-right: 20px;
+
+}
+
+ /* Menu horizontal */
+
+#menu-h{
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%); 
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+}
+
+#menu-h ul{
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    font-size: 21px;
+    
+}
+
+#menu-h ul li{
+    display: inline;   
+}
+
+#menu-h ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(98, 98, 238);
+    transition: 0.6s;
+}
+
+#menu-h ul li:last-child a{
+    float: right;
+    background-color: blue;
+    overflow: hidden;
+
+}
+
+@media (max-width: 600px) {
+    #menu-h ul li:last-child a {
+      display: none;
+    }
+  }
+
+#menu-h ul li:last-child a:hover{
+    border: 1px solid #fff ;
+}
+
+
+/* Body */
+
+.container1{
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%); 
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    padding-top: 30px;
+    
+}
+
+/* Imagem Escola */
+
+.topo{
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
+}
+
+.topo img{
+    display: block;
+    margin: 0 auto;
+    width: 950px;
+    height: 400px;
+    box-shadow: 0px 0px 0px 4px #000000;
+    
+}
+
+/* Parte do meio Index */
+
+.meio {
+    padding-top: 20px;
+    border-top: 3px solid black;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(184, 196, 198) 60%);
+    
+}
+
+.meio h3{
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    background-color: #000000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    border-radius: 13px;
+    width: 1100px;
+}
+
+.meio p{
+    text-align: justify;
+    text-indent: 50px;
+    width: 850px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Carrossel */
+
+.carrossel{
+    padding-top: 20px;
+    width: 400px;
+    height: 450px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.carrossel img{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+.carrossel ul{
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 400px;
+}
+
+.carrossel li{
+    position: relative;
+    animation: slide 15s infinite ease-out;
+    left: -400px;
+}
+
+.carrossel h3{
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    background-color: #000000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    border-radius: 13px;
+    width: 340px;
+
+}
+
+@keyframes slide{
+
+0% {left: 0px}
+20% {left: 0px}
+
+30% {left: -400px}
+50% {left: -400px}
+
+60% {left: -800px}
+90% {left: -800px}
+
+100% {left: 0px}
+}
+
+
+
+/* Rodapé */
+
+footer{
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%); 
+	color: black;
+	text-align: right;
+	font-size: 9pt;
+	height: 16px;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    padding-top: 10px;  
+}
+/* Fim Index.html */
+
+
+
+/* Cursos.html */
+
+.container2{
+    display: grid;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(184, 196, 198) 60%);
+    grid-template-columns: 1fr 1fr;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.cursostexto h2{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    background-color: #000000;
+    text-shadow: 0 0 5px #fff;
+    border-radius: 20px;
+    width: 460px;
+    
+}
+
+.cursostexto ul li{
+    text-align: justify;
+    line-height: 3.0;
+    font-size: 18px;
+}
+
+.cursoimagem img{
+    height: 400px;
+    box-shadow: 0px 0px 0px 3px #000000;
+}
+
+.container3{
+    display: grid;
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%);
+    grid-template-columns: 1fr 1fr;
+    border: 6px solid black;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+}
+
+
+
+/* Contatos.html */
+
+.container4{
+    background: linear-gradient(to right, rgb(255, 136, 24) 0%, rgb(255, 125, 3) 60%);
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(184, 196, 198) 60%);
+    padding: 15px;
+       
+}
+
+.contato input{
+    width: 300px;
+}
+
+.turma img{
+    height: 600px;
+    box-shadow: 0px 0px 0px 3px #000000;
+}
+
+#mensagem{
+    height: 160px;
+}
+
+#submit{
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+}
+
+#submit:hover{
+ outline: 3px solid yellow;
+}
+
+
+
+/* Aprovados.html */
+
+.container5{
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(184, 196, 198) 60%);
+    padding: 30px 15px;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    
+}
+
+.container5 img{
+    width: 440px;
+    height: 400px;
+    box-shadow: 0px 0px 0px 3px #000000;
+
+}
+
+.aprovados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
